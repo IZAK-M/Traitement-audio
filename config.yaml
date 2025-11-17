@@ -1,0 +1,30 @@
+# Dossiers
+input_folder: "input_audio"
+output_folder: "output_audio"
+
+# Fichiers audio à traiter
+audio_files:
+  - "bird.wav"
+  - "my_day.mp3"
+  - "piano.wav"
+
+# Méthode de combinaison: 'mix' ou 'concatenate'
+combine_method: "concatenate"
+
+# Nom du fichier de sortie
+output_name: "audio_final"
+
+# Formats de sortie
+output_formats: ["mp3", "wav"]
+
+# Effets à appliquer (dans l'ordre)
+effects:
+  - type: "fade"
+    fade_in: 1000
+    fade_out: 2000
+  
+  - type: "volume"
+    gain: 3
+  
+  - type: "normalize"
+    headroom: 0.1

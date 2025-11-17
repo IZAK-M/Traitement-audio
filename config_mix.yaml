@@ -1,0 +1,14 @@
+input_folder: "input_audio"
+output_folder: "output_audio"
+
+audio_files:
+  - "bird.wav"
+  - "piano.wav"
+
+combine_method: "mix"
+output_name: "bird_piano_mix"
+output_formats: ["mp3", "wav"]
+
+effects:
+  - type: "normalize"
+    headroom: 0.1
